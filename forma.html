@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Prva Forma</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form style="width: 300px; background-color: rgb(224, 224, 224);" action="Strana10.html" method="get"> 
+        <fieldset> 
+            <legend> My first form </legend> 
+            <label for="textIme">First name:</label><input type="text" placeholder="Marko" id="textIme" name="ime" /><br />
+            <label for="textPrezime">Last Name:</label><input type="text" placeholder="Markovic" id="textPrezime" name="prezime" />
+            <label for="password">Password:</label><input type="password" id="password" name="password" /><br />
+            <label for="email">E-mail:</label><input type="text" placeholder="no-reply@something.com" id="email" name="email" />
+            <hr/>
+
+            Gender:<br/>
+              <input type="radio" id="male" name="male" checked="checked"  value="male">
+              <label for="male">Male</label><br>
+              <input type="radio" id="female" name="female" value="female">
+              <label for="female">Female</label><br>
+            
+            <label for="programingLanguage">Select course:</label>
+            <select name="programingLanguage" id="programingLanguage">
+                <option value="ASP.NET MVC">ASP.NET MVC</option>
+                <option value="JSS">JSS</option>
+                <option value="CSS">CSS</option>
+                <option value="HTML">HTML</option>
+            </select>
+            <hr/>
+            <textarea rows="10" cols="30" name="comment" form="usrform">Enter text here...</textarea>
+            <hr/>
+
+            Training:<br/>
+            <input type="checkbox" checked="checked">
+            <label class="container">Elementary
+              
+              <br/>
+            </label>
+            <input type="checkbox">
+
+            <label class="container">Advanced
+              <br/>
+            </label>
+            <input type="checkbox">
+            <label class="container">Proficiency
+         
+              <br/>
+            </label>
+<hr/>
+             <button id="Button1" type="submit">Submit</button> &nbsp; <input id="Submit1" type="submit" value="Reset" />
+</html>

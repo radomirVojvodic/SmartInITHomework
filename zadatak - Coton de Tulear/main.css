@@ -1,0 +1,68 @@
+body {
+    background-image: url("./Resursi/background.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   #containerTitle{
+    width: 60%;
+   }
+
+   #container{
+   margin-top: 0;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 20px 54px 55px, rgba(0, 0, 0, 0.12) 20px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: 4px rgb(0, 0, 0);
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  #navBar li {
+    float: left;
+   
+  }
+  
+  #navBar li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  #navBar li a:hover {
+    background-color: #ffffff;
+    text-decoration: underline
+  }
+
+  #historyTable .td2{
+    padding: 15px;
+    text-align: center;
+    border-left: 1px solid rgb(185, 185, 185);
+    border-top: 1px solid rgb(185, 185, 185);
+  
+  }
+  #historyTable{
+    width: 550px;
+  }
+
+  #historyTable tr:hover{
+    background-color: yellow;
+  }
+
+  
+
+ 
+
+  
+
+ 

@@ -1,0 +1,23 @@
+﻿@model IEnumerable<RentalCars.Models.User>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Spisak korisnika</h2>
+
+<table class="table table-bordered table-hover table-striped table-responsive">
+
+    <tbody>
+        @foreach (var user in Model)
+        {
+        <tr>
+            <td>@Html.ActionLink(user.FirstName + " " + user.LastName + " " + user.Year, "Details", "Users", new { id = user.ID }, null)</td>
+
+        </tr>
+        }
+    </tbody>
+
+</table>
+

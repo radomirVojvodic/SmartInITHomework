@@ -1,0 +1,49 @@
+﻿@model ToDoList.Models.Task
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Task Details</h2>
+
+<div>
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TaskMade)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TaskMade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DueDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DueDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TaskPriority)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TaskPriority)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Done)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Done)
+        </dd>
+
+    </dl>
+
+
+</div>

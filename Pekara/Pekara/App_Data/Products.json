@@ -1,0 +1,26 @@
+[
+  {
+    "ProductID": 111,
+    "Name": "Pereca",
+    "Price": 46.0,
+    "Description": "Pereca od heljde",
+    "CreationDate": "2023-03-30T00:00:00",
+    "ExpirationDate": "2023-04-06T00:00:00"
+  },
+  {
+    "ProductID": 222,
+    "Name": "Mleko",
+    "Price": 105.0,
+    "Description": "Mleko 3% MM",
+    "CreationDate": "2023-04-07T00:00:00",
+    "ExpirationDate": "2023-04-08T00:00:00"
+  },
+  {
+    "ProductID": 333,
+    "Name": "Jaja",
+    "Price": 225.0,
+    "Description": "10 komada",
+    "CreationDate": "2023-04-22T00:00:00",
+    "ExpirationDate": "2023-05-06T00:00:00"
+  }
+]

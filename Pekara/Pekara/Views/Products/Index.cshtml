@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Pekara.Models.Product>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Product List</h2>
+
+<p>
+
+    @Html.ActionLink("Create New", "Create")
+
+</p>
+
+<table class="table table-responsive table-hover table-striped">
+    <tr>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreationDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExpirationDate)
+        </th>
+
+        <th></th>
+    </tr>
+
+
+    @foreach (var prod in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(model => prod.Name)</td>
+            <td>@Html.DisplayFor(model => prod.Description)</td>
+            <td>@Html.DisplayFor(model => prod.Price) RSD</td>
+            <td>@Html.DisplayFor(model => prod.CreationDate)</td>
+            <td>@Html.DisplayFor(model => prod.ExpirationDate)</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = prod.ProductID }) |
+                @Html.ActionLink("Details", "Details", new { id = prod.ProductID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = prod.ProductID }) |
+            </td>
+
+        </tr>
+    }
+
+</table>
+
+

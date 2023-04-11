@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ToDoList.Models.Task>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Task List</h2>
+
+<p>
+
+    @Html.ActionLink("Create New", "Create")
+
+</p>
+
+<table class="table table-responsive table-hover table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Done)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaskMade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DueDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaskPriority)
+        </th>
+        <th></th>
+    </tr>
+
+
+    @foreach (var task in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(model => task.Done)</td>
+            <td>@Html.DisplayFor(model => task.Title)</td>
+            <td>@Html.DisplayFor(model => task.TaskMade)</td>
+            <td>@Html.DisplayFor(model => task.DueDate)</td>
+            <td>@Html.DisplayFor(model => task.TaskPriority)</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = task.TaskID }) |
+                @Html.ActionLink("Details", "Details", new { id = task.TaskID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = task.TaskID }) |
+             </td>
+
+         </tr>
+    }
+
+</table>
